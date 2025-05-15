@@ -105,15 +105,18 @@ This starts a Browsersync server at [http://localhost:3000](http://localhost:300
 
 ## About the Team & My Contribution
 
-This web application was developed by a team of three students as part of our CS 460W Software Development course. My personal contributions included:
+This web application was built by a team of three students as part of our CS 460W Software Development course. While the project was collaborative, I took on a leadership role during multiple phases and contributed heavily to both backend and frontend development.
 
-- Setting up the backend using Python (Flask) and SQLite.
-- Creating the database models and API routes (authentication, reservations, finances, etc.).
-- Implementing court reservation logic and guest charging functionality.
-- Leading integration and unit testing, including reservation flow and access control.
-- Developing major frontend logic for login, member directory, and reservation pages.
-- Writing setup instructions and documentation.
+My individual contributions included:
 
-This was a collaborative project, and I ensured the backend structure and functionality were clean, testable, and well-documented.
+- Designing and implementing the backend using Python, Flask, SQLAlchemy, and SQLite.
+- Creating API routes for core functionality such as login, reservations, guest tracking, and finances.
+- Developing the reservation system, including court conflict checks and guest billing logic.
+- Building key frontend features in JavaScript such as the login flow, reservation form, member directory search, and treasurer account tools.
+- Leading integration and unit testing using Python's `unittest` framework — covering authentication, role-based access, and edge case handling.
+- Writing the technical documentation and setup instructions used to run the project.
+- Helping coordinate code integration, debugging, and task management throughout the semester.
+
+This project gave me a chance to apply full-stack development skills in a real team setting while taking initiative on complex features and testing workflows. It also helped sharpen my understanding of the software development life cycle (SDLC), especially in areas like requirement gathering, iterative development, testing, and deployment.
 
 ---
