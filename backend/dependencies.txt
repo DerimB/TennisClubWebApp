@@ -1,0 +1,7 @@
+# pip install -r dependencies.txt
+
+flask
+flask-sqlalchemy
+flask-migrate
+flask-cors
+python-dotenv
