@@ -113,7 +113,7 @@ My individual contributions included:
 - Creating API routes for core functionality such as login, reservations, guest tracking, and finances.
 - Developing the reservation system, including court conflict checks and guest billing logic.
 - Building key frontend features in JavaScript such as the login flow, reservation form, member directory search, and treasurer account tools.
-- Leading integration and unit testing using Python's `unittest` framework — covering authentication, role-based access, and edge case handling.
+- Leading integration and unit testing using Python's `unittest` framework, covering authentication, role-based access, and edge case handling.
 - Writing the technical documentation and setup instructions used to run the project.
 - Helping coordinate code integration, debugging, and task management throughout the semester.
 
