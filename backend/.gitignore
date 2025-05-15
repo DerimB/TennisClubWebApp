@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Flask runtime and local env
+instance/
+.env
+.env.*
+
+# VS Code settings
+.vscode/
+
+# Byte-compiled / cache
+*.pyc
+*.pkl
+*.log
+
+# Build artifacts
+dist/
+build/
