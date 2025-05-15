@@ -1,0 +1,630 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4c26b; /* Light yellow-orange */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ed8b4e; /* Orange */
+  padding: 10px 30px;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 20%;
+}
+
+.logo {
+  font-size: 18px;
+  font-style: italic;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+}
+
+.logo span {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  margin: 0 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-style: italic;
+}
+
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  font-style: italic;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.login-box {
+  background-color: #d3d3d3; /* Light gray */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-style: italic;
+  margin-bottom: 5px;
+  align-self: flex-start;
+}
+
+input {
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-button {
+  width: 100px;
+  padding: 10px;
+  background-color: #3a4ede; /* Blue button */
+  color: white;
+  font-size: 16px;
+  font-style: italic;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #2b3db5;
+}
+
+.directory-container {
+  padding: 40px;
+  background-color: #fff5e1;
+  min-height: 100vh;
+}
+
+#search {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.member-entry {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+
+.member-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.member-table th,
+.member-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.member-table th {
+  background-color: #f4a261;
+  color: white;
+}
+
+.member-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.container {
+  display: flex; /* Enables Flexbox */
+  justify-content: space-between; /* Spaces items evenly */
+  align-items: center; /* Aligns items vertically */
+  gap: 20px; /* Adds space between boxes */
+  padding: 20px;
+}
+
+.box {
+  width: 64vw; /* Box width */
+  height: 88vh; /* Box height */
+  background-color: lightblue; /* Background color */
+  border: 2px solid black; /* Border */
+  padding: 10px; /* Inner spacing */
+  margin: 10px; /* Outer spacing */
+  text-align: center; /* Center text */
+  line-height: 100px; /* Align text vertically */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.box2 {
+  width: 30vw; /* Box width */
+  height: 88vh; /* Box height */
+  background-color: lightblue; /* Background color */
+  border: 2px solid black; /* Border */
+  padding: 10px; /* Inner spacing */
+  margin: 10px; /* Outer spacing */
+  text-align: center; /* Center text */
+  line-height: 100px; /* Align text vertically */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.calendar-container {
+  position: absolute; /* Absolute positioning to overlay on the page */
+  top: 20vh; /* Align to the top of the page */
+  display: flex; /* Enables Flexbox */
+  justify-content: space-between; /* Spaces items evenly */
+  align-items: center; /* Aligns items vertically */
+  gap: 20px; /* Adds space between boxes */
+  padding: 20px;
+}
+
+input{
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #007BFF;
+  border-radius: 5px;
+}
+
+input[type="select-players"]{
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #007BFF;
+  border-radius: 5px;
+}
+
+time-input-container {
+  position: absolute; /* Absolute positioning to overlay on the page */
+  top: 25vh; /* Align to the top of the page */
+  display: flex; /* Enables Flexbox */
+  justify-content: space-between; /* Spaces items evenly */
+  align-items: center; /* Aligns items vertically */
+  gap: 20px; /* Adds space between boxes */
+  padding: 20px;
+}
+
+.select-game-type-container {
+  position: absolute; /* Absolute positioning to overlay on the page */
+  top: 30vh; /* Align to the top of the page */
+  display: flex; /* Enables Flexbox */
+  justify-content: space-between; /* Spaces items evenly */
+  align-items: center; /* Aligns items vertically */
+  gap: 20px; /* Adds space between boxes */
+  padding: 20px;
+}
+
+.select-court-container {
+  position: absolute; /* Absolute positioning to overlay on the page */
+  top: 35vh; /* Align to the top of the page */
+  display: flex; /* Enables Flexbox */
+  justify-content: space-between; /* Spaces items evenly */
+  align-items: center; /* Aligns items vertically */
+  gap: 20px; /* Adds space between boxes */
+  padding: 20px;
+}
+
+.select-players-container {
+  position: absolute; /* Absolute positioning to overlay on the page */
+  top: 40vh; /* Align to the top of the page */
+  display: flex; /* Enables Flexbox */
+  flex-direction: column;
+  justify-content: space-between; /* Spaces items evenly */
+  align-items: center; /* Aligns items vertically */
+  gap: 5px; /* Adds space between boxes */
+  padding-left: 20px;
+  padding-top: 5px; /* Adjust padding for top alignment */
+}
+
+.submit-reservation-container {
+  position: absolute; /* Absolute positioning to overlay on the page */
+  top: 60vh; /* Align to the top of the page */
+  display: flex; /* Enables Flexbox */
+  flex-direction: column;
+  justify-content: space-between; /* Spaces items evenly */
+  align-items: center; /* Aligns items vertically */
+  gap: 5px; /* Adds space between boxes */
+  padding-left: 20px;
+  padding-top: 5px; /* Adjust padding for top alignment */
+}
+
+select {
+  font-size: 16px; /* Increase font size */
+}
+
+option {
+  font-size: 16px; /* Increase font size for options */
+}
+
+button {
+  font-size: 16px; /* Increase font size */
+}
+
+/* Reservation styling */
+
+.reservations-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px;
+}
+
+.reservation-form {
+  width: 65%;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.reservation-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 25%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-reservation-button {
+  background-color: #3a4ede;
+  color: white;
+  font-size: 16px;
+  font-style: italic;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.submit-reservation-button:hover {
+  background-color: #2b3db5;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+.logo-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display-reservations-box {
+  display: flex; /* Enables Flexbox */
+  flex-direction: column; /* Arrange child elements in a row */
+  justify-content: space-between; /* Add space between child elements */
+  align-items: flex-start; /* Align items to the top */
+  background-color: #d3d3d3; /* Light gray */
+  padding: 20px; /* Adjust padding */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-height: 560px; /* Set a maximum height for the box */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  gap: 20px; /* Add space between columns */
+}
+
+.display-reservations-table {
+  display: flex; /* Enables Flexbox */
+  flex-direction: row; /* Arrange columns side by side */
+  gap: 20px; /* Add space between columns */
+}
+
+.display-reservations-collumn {
+  display: flex; /* Enables Flexbox */
+  flex-direction: column; /* Arrange times vertically */
+  gap: 10px; /* Add space between time elements */
+}
+
+.display-reservations-time {
+  background-color: #ffffff; /* White background for time blocks */
+  padding: 8px; /* Inner spacing */
+  border-radius: 5px; /* Rounded corners */
+  /*box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; /* Center-align text */
+  font-size: 14px; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+}
+
+.basic-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  height: 80vh;
+  
+}
+
+.reservations-box {
+  background-color: #d3d3d3; /* Light gray */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-entry {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px; /* Add space between elements */
+}
+
+.player-entry input[type="text"] {
+  margin-right: 10px; /* Space between the text input and the checkbox */
+  padding: 5px; /* Adjust padding for consistency */
+  font-size: 14px; /* Match font size with the label */
+}
+
+.player-entry input[type="checkbox"] {
+  margin: 0 5px 0 0; /* Add space between the checkbox and the label text */
+  width: 15px; /* Optional: Set a specific width */
+  height: 15px; /* Optional: Set a specific height */
+}
+
+.player-entry label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 10px; /* Add space between the label and the email input */
+}
+
+.player-entry .email-input {
+  display: inline-block; /* Ensure it stays inline */
+  width: 200px; /* Set a fixed width */
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.court-title {
+  position: sticky; /* Keeps the title fixed within its parent container */
+  top: -20px; /* Sticks to the top of the parent container */
+  background-color: #d3d3d3; /* Match the background color of the parent */
+  z-index: 1; /* Ensure it stays above the scrolling content */
+  padding-top: 20px; /* Add some padding for spacing */
+  padding-bottom: 20px; /* Add some padding for spacing */
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: bold; /* Make the title bold */
+  text-align: center; /* Center-align the text */
+}
+
+.treasurer-modify-display-box {
+  background-color: #d3d3d3; /* Light gray */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px; /* Add space between elements */
+}
+
+.charge-member-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%; /* Set width to 70% of the parent container */
+  gap: 20px; /* Add space between elements */
+  padding: 20px; /* Add padding around the container */
+  background-color: #f4f4f4; /* Light gray background */
+}
+
+.user-info-display-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%; /* Set width to 70% of the parent container */
+  padding: 20px; /* Add padding around the container */
+  background-color: #f4f4f4; /* Light gray background */
+}
+
+.title {
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center; /* Center-align the text */
+  display: flex; /* Use Flexbox for centering */
+  justify-content: center; /* Horizontally center the text */
+  align-items: center; /* Vertically center the text */
+  width: 100%; /* Ensure it spans the full width of the parent container */
+  margin: 0px; /* Add space below the title */
+  padding: 0%;
+}
+
+.charge-amounts {
+  display: flex;
+  flex-direction: row;;
+  align-items: center;
+  justify-content: center; /* Center-align the text */
+  width: 100%; /* Set width to 100% of the parent container */
+  gap: 20px; /* Add space between elements */
+  padding: 0px; /* Add padding around the container */
+}
+
+.member-name {
+  font-size: 36px;
+  color: green;
+  font-weight: bold;
+}
+
+.member-amount-due {
+  font-size: 36px;
+  color: black;
+  font-weight: bold;
+}
+
+.display-date {
+  text-align: center; /* Center-align the text inside the parent */
+  width: 100%; /* Ensure it spans the full width of the parent */
+  font-size: 18px; /* Optional: Adjust font size */
+  font-weight: bold; /* Optional: Make the text bold */
+  margin: 10px 0; /* Optional: Add vertical spacing */
+}
+
+.display-upcoming-reservations {
+  position: relative;
+  display: flex-start; /* Enables Flexbox */
+  top: 45px;
+  flex-direction: column; /* Arrange child elements in a row */
+  justify-content: space-between; /* Add space between child elements */
+  align-items: flex-start; /* Align items to the top */
+  background-color: #d3d3d3; /* Light gray */
+  padding: 20px; /* Adjust padding */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  height: 560px; /* Set a maximum height for the box */
+  width: 450px; /* Set a fixed width for the box */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  gap: 20px; /* Add space between columns */
+}
+
+.upcoming-reservation {
+  position: relative;
+  display: flex; /* Enables Flexbox */
+  flex-direction: row; /* Arrange columns side by side */
+  background-color: #ffffff; /* White background for time blocks */
+  outline: #333;
+  border-radius: 10px;
+  gap: 20px;
+  width: 95%;
+  padding: 10px; /* Inner spacing */
+  margin-block: 10px; /* Space between reservation blocks */
+}
+
+
+
+.cancel-reservation-button {
+  background-color: #ff0000; /* Red button */
+  color: white;
+  font-size: 16px;
+  font-style: italic;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.upcoming-reservation-table-2 {
+  position: absolute;
+  top: 10px; /* Align to the top of the parent container */
+  right: 10px; /* Align to the right of the parent container */
+  display: flex; /* Enables Flexbox */
+  flex-direction: row; /* Arrange columns side by side */
+  gap: 20px; /* Add space between columns */
+  justify-content: right; /* Align items to the right horizontally */
+  align-items: flex-end; /* Align items to the bottom vertically */
+}
+
+.upcoming-reservations-title {
+  text-align: center; /* Center-align the text inside the parent */
+  width: 100%; /* Ensure it spans the full width of the parent */
+  font-size: 18px; /* Optional: Adjust font size */
+  font-weight: bold; /* Optional: Make the text bold */
+  margin: 10px 0; /* Optional: Add vertical spacing */
+}
+
+.reservations-title {
+  text-align: center; /* Center-align the text inside the parent */
+  width: 100%; /* Ensure it spans the full width of the parent */
+  font-size: 18px; /* Optional: Adjust font size */
+  font-weight: bold; /* Optional: Make the text bold */
+  margin: 10px 0; /* Optional: Add vertical spacing */
+}
+
+.guest-count-box {
+  position: relative;
+  z-index: 1;
+  display: flex; /* Enables Flexbox */
+  top: -55px;
+  flex-direction: column; /* Arrange child elements in a row */
+  justify-content: space-between; /* Add space between child elements */
+  align-items: flex-start; /* Align items to the top */
+  background-color: #d3d3d3; /* Light gray */
+  padding: 20px; /* Adjust padding */
+  border-radius: 8px; /* Rounded corners */
+  height: 60px; /* Set a maximum height for the box */
+  width: 88%; /* Set a fixed width for the box */
+  gap: 5px; /* Add space between columns */
+}
+
+.guest-count-title {
+  text-align: center; /* Center-align the text inside the parent */
+  width: 100%; /* Ensure it spans the full width of the parent */
+  font-size: 18px; /* Optional: Adjust font size */
+  font-weight: bold; /* Optional: Make the text bold */
+}
+
+.guest-count-number {
+  text-align: center; /* Center-align the text inside the parent */
+  width: 100%; /* Ensure it spans the full width of the parent */
+  font-size: 18px; /* Optional: Adjust font size */
+  font-weight: bold; /* Optional: Make the text bold */
+}
+
+.hidden {
+  display: none !important; /* Completely hide the element */
+}

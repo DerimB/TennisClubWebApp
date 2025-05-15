@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gulf Coast Courts & Oil Rigs - About</title>
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="icon" href="/assets/logoICO.ico" type="image/x-icon">
+  <script src="/js/permission-manager.js" defer></script>
+</head>
+<body>
+  <nav>
+    <div class="logo-bar">
+      <img src="/assets/logo.png" alt="Gulf Coast Courts & Oil Rigs Logo" class="logo-img" />
+      <div class="logo">Gulf Coast<br><span>Courts & Oil Rigs</span></div>
+    </div>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contacts.html">Contact</a></li>
+      <li><a href="member-directory.html">Member Directory</a></li>
+      <li><a href="reservations.html">Court Reservations</a></li>
+      <div id="admin-tab"></div>
+      <div id="treasurer-tab"></div>
+      <li><a href="index.html" id="logout">Logout</a></li>
+    </ul>
+  </nav>
+  <div class="basic-container">
+    <div class="reservations-box">
+      <div class="reservations-title">Create Reservation</div>
+      <label for="date">Select a date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="start-time">Select a start time:</label>
+      <select id="start-time" name="start-time"></select>
+
+      <label for="end-time">Select an end time:</label>
+      <select id="end-time" name="end-time"></select>
+      
+        <label for="game-type">Select a game type:</label>
+        <select id="game-type" name="game-type">
+          <option value="doubles">Doubles</option>
+          <option value="singles">Singles</option>          
+        </select>
+  
+        <label for="court">Select a court:</label>
+        <select id="court" name="court">
+          <option value="1">Court 1</option>
+          <option value="2">Court 2</option>
+          <option value="3">Court 3</option>
+          <option value="4">Court 4</option>
+          <option value="5">Court 5</option>
+          <option value="6">Court 6</option>
+          <option value="7">Court 7</option>
+          <option value="8">Court 8</option>
+          <option value="9">Court 9</option>
+          <option value="10">Court 10</option>
+          <option value="11">Court 11</option>
+          <option value="12">Court 12</option>
+        </select>
+        <div class="player-entry-box">
+          <label>Select other players:</label>
+          <div class="player-entry">
+            <div class="player-input-container">
+              <select class="player-select">
+                <option value="" disabled selected>Loading members...</option>
+              </select>
+            </div>
+            <label>
+              <input type="checkbox" name="guest-pass-1" />
+              Use Guest Pass
+            </label>
+          </div>
+          <div class="player-entry">
+            <div class="player-input-container">
+              <select class="player-select">
+                <option value="" disabled selected>Loading members...</option>
+              </select>
+            </div>
+            <label>
+              <input type="checkbox" name="guest-pass-2" />
+              Use Guest Pass
+            </label>
+          </div>
+          <div class="player-entry">
+            <div class="player-input-container">
+              <select class="player-select">
+                <option value="" disabled selected>Loading members...</option>
+              </select>
+            </div>
+            <label>
+              <input type="checkbox" name="guest-pass-3" />
+              Use Guest Pass
+            </label>
+          </div>
+        </div>
+        <button id="submit-reservation" class="submit-reservation-button">Submit Reservation</button>
+    </div>
+    <div class="display-reservations-box">
+      <div>
+        <div id="display-date" class="display-date">mm/dd/yyyy</p>
+      </div>
+      <div class="display-reservations-table">
+        <div class="display-reservations-collumn">
+          <div class="court-title">Court 1</div>
+          <div class="display-reservations-time" id="06:30 - 07:00">6:30 - 7:00</div>
+          <div class="display-reservations-time" id="07:00 - 07:30">7:00 - 7:30</div>
+          <div class="display-reservations-time" id="07:30 - 08:00">7:30 - 8:00</div>
+          <div class="display-reservations-time" id="08:30 - 09:00">8:00 - 8:30</div>
+          <div class="display-reservations-time" id="08:30 - 09:00">8:30 - 9:00</div>
+          <div class="display-reservations-time" id="09:00 - 09:30">9:00 - 9:30</div>
+          <div class="display-reservations-time" id="09:30 - 10:00">9:30 - 10:00</div>
+          <div class="display-reservations-time" id="10:00 - 10:30">10:00 - 10:30</div>
+          <div class="display-reservations-time" id="10:30 - 11:00">10:30 - 11:00</div>
+          <div class="display-reservations-time" id="11:00 - 11:30">11:00 - 11:30</div>
+          <div class="display-reservations-time" id="11:30 - 12:00">11:30 - 12:00</div>
+          <div class="display-reservations-time" id="12:00 - 12:30">12:00 - 12:30</div>
+          <div class="display-reservations-time" id="12:30 - 13:00">12:30 - 1:00</div>
+          <div class="display-reservations-time" id="13:00 - 13:30">1:00 - 1:30</div>
+          <div class="display-reservations-time" id="13:30 - 14:00">1:30 - 2:00</div>
+          <div class="display-reservations-time" id="14:00 - 14:30">2:00 - 2:30</div>
+          <div class="display-reservations-time" id="14:30 - 15:00">2:30 - 3:00</div>
+          <div class="display-reservations-time" id="15:00 - 15:30">3:00 - 3:30</div>
+          <div class="display-reservations-time" id="15:30 - 16:00">3:30 - 4:00</div>
+          <div class="display-reservations-time" id="16:00 - 16:30">4:00 - 4:30</div>
+          <div class="display-reservations-time" id="16:30 - 17:00">4:30 - 5:00</div>
+          <div class="display-reservations-time" id="17:00 - 17:30">5:00 - 5:30</div>
+          <div class="display-reservations-time" id="17:30 - 18:00">5:30 - 6:00</div>
+          <div class="display-reservations-time" id="18:00 - 18:30">6:00 - 6:30</div>
+          <div class="display-reservations-time" id="18:30 - 19:00">6:30 - 7:00</div>
+          <div class="display-reservations-time" id="19:00 - 19:30">7:00 - 7:30</div>
+          <div class="display-reservations-time" id="19:30 - 20:00">7:30 - 8:00</div>
+          <div class="display-reservations-time" id="20:00 - 20:30">8:00 - 8:30</div>
+
+
+        </div>
+        <div class="display-reservations-collumn">
+          <div class="court-title">Court 2</div>
+          <div class="display-reservations-time" id="06:30 - 07:00">6:30 - 7:00</div>
+          <div class="display-reservations-time" id="07:00 - 07:30">7:00 - 7:30</div>
+          <div class="display-reservations-time" id="07:30 - 08:00">7:30 - 8:00</div>
+          <div class="display-reservations-time" id="08:30 - 09:00">8:00 - 8:30</div>
+          <div class="display-reservations-time" id="08:30 - 09:00">8:30 - 9:00</div>
+          <div class="display-reservations-time" id="09:00 - 09:30">9:00 - 9:30</div>
+          <div class="display-reservations-time" id="09:30 - 10:00">9:30 - 10:00</div>
+          <div class="display-reservations-time" id="10:00 - 10:30">10:00 - 10:30</div>
+          <div class="display-reservations-time" id="10:30 - 11:00">10:30 - 11:00</div>
+          <div class="display-reservations-time" id="11:00 - 11:30">11:00 - 11:30</div>
+          <div class="display-reservations-time" id="11:30 - 12:00">11:30 - 12:00</div>
+          <div class="display-reservations-time" id="12:00 - 12:30">12:00 - 12:30</div>
+          <div class="display-reservations-time" id="12:30 - 13:00">12:30 - 1:00</div>
+          <div class="display-reservations-time" id="13:00 - 13:30">1:00 - 1:30</div>
+          <div class="display-reservations-time" id="13:30 - 14:00">1:30 - 2:00</div>
+          <div class="display-reservations-time" id="14:00 - 14:30">2:00 - 2:30</div>
+          <div class="display-reservations-time" id="14:30 - 15:00">2:30 - 3:00</div>
+          <div class="display-reservations-time" id="15:00 - 15:30">3:00 - 3:30</div>
+          <div class="display-reservations-time" id="15:30 - 16:00">3:30 - 4:00</div>
+          <div class="display-reservations-time" id="16:00 - 16:30">4:00 - 4:30</div>
+          <div class="display-reservations-time" id="16:30 - 17:00">4:30 - 5:00</div>
+          <div class="display-reservations-time" id="17:00 - 17:30">5:00 - 5:30</div>
+          <div class="display-reservations-time" id="17:30 - 18:00">5:30 - 6:00</div>
+          <div class="display-reservations-time" id="18:00 - 18:30">6:00 - 6:30</div>
+          <div class="display-reservations-time" id="18:30 - 19:00">6:30 - 7:00</div>
+          <div class="display-reservations-time" id="19:00 - 19:30">7:00 - 7:30</div>
+          <div class="display-reservations-time" id="19:30 - 20:00">7:30 - 8:00</div>
+          <div class="display-reservations-time" id="20:00 - 20:30">8:00 - 8:30</div>
+        </div>
+        <div class="display-reservations-collumn">
+          <div class="court-title">Court 3</div>
+          <div class="display-reservations-time" id="06:30 - 07:00">6:30 - 7:00</div>
+          <div class="display-reservations-time" id="07:00 - 07:30">7:00 - 7:30</div>
+          <div class="display-reservations-time" id="07:30 - 08:00">7:30 - 8:00</div>
+          <div class="display-reservations-time" id="08:30 - 09:00">8:00 - 8:30</div>
+          <div class="display-reservations-time" id="08:30 - 09:00">8:30 - 9:00</div>
+          <div class="display-reservations-time" id="09:00 - 09:30">9:00 - 9:30</div>
+          <div class="display-reservations-time" id="09:30 - 10:00">9:30 - 10:00</div>
+          <div class="display-reservations-time" id="10:00 - 10:30">10:00 - 10:30</div>
+          <div class="display-reservations-time" id="10:30 - 11:00">10:30 - 11:00</div>
+          <div class="display-reservations-time" id="11:00 - 11:30">11:00 - 11:30</div>
+          <div class="display-reservations-time" id="11:30 - 12:00">11:30 - 12:00</div>
+          <div class="display-reservations-time" id="12:00 - 12:30">12:00 - 12:30</div>
+          <div class="display-reservations-time" id="12:30 - 13:00">12:30 - 1:00</div>
+          <div class="display-reservations-time" id="13:00 - 13:30">1:00 - 1:30</div>
+          <div class="display-reservations-time" id="13:30 - 14:00">1:30 - 2:00</div>
+          <div class="display-reservations-time" id="14:00 - 14:30">2:00 - 2:30</div>
+          <div class="display-reservations-time" id="14:30 - 15:00">2:30 - 3:00</div>
+          <div class="display-reservations-time" id="15:00 - 15:30">3:00 - 3:30</div>
+          <div class="display-reservations-time" id="15:30 - 16:00">3:30 - 4:00</div>
+          <div class="display-reservations-time" id="16:00 - 16:30">4:00 - 4:30</div>
+          <div class="display-reservations-time" id="16:30 - 17:00">4:30 - 5:00</div>
+          <div class="display-reservations-time" id="17:00 - 17:30">5:00 - 5:30</div>
+          <div class="display-reservations-time" id="17:30 - 18:00">5:30 - 6:00</div>
+          <div class="display-reservations-time" id="18:00 - 18:30">6:00 - 6:30</div>
+          <div class="display-reservations-time" id="18:30 - 19:00">6:30 - 7:00</div>
+          <div class="display-reservations-time" id="19:00 - 19:30">7:00 - 7:30</div>
+          <div class="display-reservations-time" id="19:30 - 20:00">7:30 - 8:00</div>
+          <div class="display-reservations-time" id="20:00 - 20:30">8:00 - 8:30</div>
+        </div>
+        <div class="display-reservations-collumn">
+          <div class="court-title">Court 4</div>
+          <div class="display-reservations-time" id="06:30 - 07:00">6:30 - 7:00</div>
+          <div class="display-reservations-time" id="07:00 - 07:30">7:00 - 7:30</div>
+          <div class="display-reservations-time" id="07:30 - 08:00">7:30 - 8:00</div>
+          <div class="display-reservations-time" id="08:30 - 09:00">8:00 - 8:30</div>
+          <div class="display-reservations-time" id="08:30 - 09:00">8:30 - 9:00</div>
+          <div class="display-reservations-time" id="09:00 - 09:30">9:00 - 9:30</div>
+          <div class="display-reservations-time" id="09:30 - 10:00">9:30 - 10:00</div>
+          <div class="display-reservations-time" id="10:00 - 10:30">10:00 - 10:30</div>
+          <div class="display-reservations-time" id="10:30 - 11:00">10:30 - 11:00</div>
+          <div class="display-reservations-time" id="11:00 - 11:30">11:00 - 11:30</div>
+          <div class="display-reservations-time" id="11:30 - 12:00">11:30 - 12:00</div>
+          <div class="display-reservations-time" id="12:00 - 12:30">12:00 - 12:30</div>
+          <div class="display-reservations-time" id="12:30 - 13:00">12:30 - 1:00</div>
+          <div class="display-reservations-time" id="13:00 - 13:30">1:00 - 1:30</div>
+          <div class="display-reservations-time" id="13:30 - 14:00">1:30 - 2:00</div>
+          <div class="display-reservations-time" id="14:00 - 14:30">2:00 - 2:30</div>
+          <div class="display-reservations-time" id="14:30 - 15:00">2:30 - 3:00</div>
+          <div class="display-reservations-time" id="15:00 - 15:30">3:00 - 3:30</div>
+          <div class="display-reservations-time" id="15:30 - 16:00">3:30 - 4:00</div>
+          <div class="display-reservations-time" id="16:00 - 16:30">4:00 - 4:30</div>
+          <div class="display-reservations-time" id="16:30 - 17:00">4:30 - 5:00</div>
+          <div class="display-reservations-time" id="17:00 - 17:30">5:00 - 5:30</div>
+          <div class="display-reservations-time" id="17:30 - 18:00">5:30 - 6:00</div>
+          <div class="display-reservations-time" id="18:00 - 18:30">6:00 - 6:30</div>
+          <div class="display-reservations-time" id="18:30 - 19:00">6:30 - 7:00</div>
+          <div class="display-reservations-time" id="19:00 - 19:30">7:00 - 7:30</div>
+          <div class="display-reservations-time" id="19:30 - 20:00">7:30 - 8:00</div>
+          <div class="display-reservations-time" id="20:00 - 20:30">8:00 - 8:30</div>
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div>
+    <div class="display-upcoming-reservations">
+      <div class="upcoming-reservations-title">Upcoming Reservations</div>
+      </div>
+      <div class="guest-count-box">
+        <div class="guest-count-title">Guest Passes Remaining</div>
+        <div class="guest-count-number">3</div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/js/reservations.js"></script>
+  </body>
+</html>
