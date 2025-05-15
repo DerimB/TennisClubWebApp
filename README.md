@@ -19,7 +19,7 @@ A full-stack web application for managing a tennis club, built as a team project
 - **Build Tool**: Gulp
 - **Testing**: Python `unittest` for unit testing, manual integration testing
 
-## Folder Structure
+## Core Folder Structure
 
 ```
 TennisClubWebApp/
